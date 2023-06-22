@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    tools:context=".VerProductoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <!-- Textinput - equivalente a textview y textinputedittext seria a un EditText-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nombreLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre de Producto"
+                app:boxBackgroundColor="#FFFFFF"
+                app:boxStrokeColor="#F44336"
+                app:hintTextColor="#FF5722">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etvNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    tools:ignore="Deprecated" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/precioLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Precio"
+                app:boxBackgroundColor="#FFFFFF"
+                app:boxStrokeColor="#F44336"
+                app:hintTextColor="#FF5722">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etvPrecio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/DescripcionLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Descripción"
+                android:maxLines="2"
+                app:autoSizeStepGranularity="2sp"
+                app:autoSizeTextType="uniform"
+                app:boxBackgroundColor="#FFFFFF"
+                app:boxStrokeColor="#F44336"
+                app:hintTextColor="#FF5722">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etvDescripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/imgVer"
+                android:layout_marginTop="8dp"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/papas" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:hint="URL de Imagen"
+                app:boxBackgroundColor="#FBFBFB"
+                app:boxStrokeColor="#F44336"
+                app:hintTextColor="#FF5722">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etvImagen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnVerEditar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/white"
+                    android:background="@drawable/btn_reound"
+                    android:text="Editar">
+                </androidx.appcompat.widget.AppCompatButton>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnVerBorrar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/white"
+                    android:background="@drawable/btn_reound"
+                    android:text="Borrar">
+                </androidx.appcompat.widget.AppCompatButton>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnVerGuardar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#008f39"
+                android:layout_marginTop="8dp"
+                android:enabled="false"
+                android:visibility="invisible"
+                android:text="Guardar"
+                android:textColor="@color/white">
+            </androidx.appcompat.widget.AppCompatButton>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

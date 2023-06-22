@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "351018097051",
+    "project_id": "proyecto-final-ispc",
+    "storage_bucket": "proyecto-final-ispc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:351018097051:android:082ab951628eca8863293e",
+        "android_client_info": {
+          "package_name": "com.example.ultimo2023"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "351018097051-50ts7ginh779j4tbkjfiand2dgq9p3bb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4_ej6qE21Wufqv548zZmmNz4hwCoii5U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "351018097051-50ts7ginh779j4tbkjfiand2dgq9p3bb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
