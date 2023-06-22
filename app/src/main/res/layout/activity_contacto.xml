@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
     tools:context=".ContactoActivity">
 
     <TextView
@@ -17,7 +19,6 @@
         android:text="Nuestra idea de negocio es un bar de comidas y bebidas de autor.Queremos crear un ambiente acogedor y agradable para que los clientes disfruten de una experiencia gastronómica única.Queremos crear un punto de encuentro donde los clientes puedan socializar entre ellos y disfrutar de la comodidad y calidad que ofrecemos.Queremos,más allá del servicio de bar, ofrecer una excelente atención, donde cada cliente se sienta especial y atendido en todos sus pedidos."
         android:textColor="@color/white"
         android:textSize="14sp"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
